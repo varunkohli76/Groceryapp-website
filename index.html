@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/Signin.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 background-color">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <h2>Grossify</h2>
+                            </div>
+                            <div class="col-lg-5 search">
+                                <form class="navbar-form navbar-left" action="/action_page.php">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search Product"
+                                            name="search">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-success" type="submit"> Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="button" class="btn btn-primary btn-3">Download App</button>
+                            </div>
+                            <div class="col-lg-2 linksnavbar">
+                                <button type="button" class="btn btn-primary btn-4">Home</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="row justify-content-center card-content">
+            <div class="col-lg-5">
+                <div class="card custom-card">
+                    <form action="home.html">
+                        <div id="Success-message">
+                            <h4 class="card-title Register-heading">SIGN IN</h4>
+                            <div>
+                                <div class="mb-3">
+                                    <input type="email" id="email" placeholder="Enter Email" name="email" required><br>
+                                    <span id="emailError"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" id="password" name="password" placeholder="Enter Password"
+                                        required><br>
+                                    <span id="passwordError"></span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn1" onclick="return hello()">Sign-In</button><br><br>
+                            <span>Don't have any account?</span><a href="./signup.html">Sign Up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/Js/index.js"></script>
+</body>
+</html>

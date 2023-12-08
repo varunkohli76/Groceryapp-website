@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 background-color">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <h2>Grossify</h2>
+                            </div>
+                            <div class="col-lg-5 search">
+                                <form class="navbar-form navbar-left" action="/action_page.php">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search Product"
+                                            name="search">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-success" type="submit"> Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="button" class="btn btn-primary btn-3">Download App</button>
+                            </div>
+                            <div class="col-lg-2 linksnavbar">
+                                <button type="button" class="btn btn-primary btn-4">Home</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box">
+                        <div id="successMessage"></div>
+                            <h1>SIGN-UP</h1>
+                            <form action="index.html">
+                                <div class="mb-3 mt-3">
+                                    <input type="text" id="fname" placeholder="Enter First Name" maxlength="20"
+                                        name="email"><br>
+                                    <span id="fnameerror"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" id="lname" placeholder="Enter Last Name" name="fname"><br>
+                                    <span id="lasterror"></span>
+
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" id="email" placeholder="Enter Email" name="email"><br>
+                                    <span id="emaillerror"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" id="phone" placeholder="Enter Phone No" name="phone"><br>
+                                    <span id="phoneerror"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" id="pwd" placeholder="Enter Password" name="pswd"><br>
+                                    <span id="passworderror"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" id="comfirmpwd" placeholder="Enter Comfirm Password"
+                                        name="comfirmpswd"><br>
+                                    <span id="comfirmpassworderror"></span>
+
+                                    <button type="submit" class="btn1" role="button"
+                                        onclick="return validation()">Register</button>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="./assets/Js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/Js/signup.js"></script>
+</body>
+
+</html>
